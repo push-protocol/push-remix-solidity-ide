@@ -28,6 +28,7 @@ jobs:
         run: yarn run build:production
         env:
           NODE_OPTIONS: "--max_old_space_size=4096"
+          NX_DESKTOP_FROM_DIST: true
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
