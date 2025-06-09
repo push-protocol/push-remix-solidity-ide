@@ -1,7 +1,0 @@
-[package]
-name = "stealthdrop"
-authors = [""]
-compiler_version = ">=0.18.0"
-type = "bin"
-
-[dependencies]

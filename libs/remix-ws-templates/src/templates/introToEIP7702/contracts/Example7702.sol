@@ -1,1 +1,0 @@
-import "https://github.com/eth-infinitism/account-abstraction/blob/releases/v0.8/contracts/accounts/Simple7702Account.sol";
