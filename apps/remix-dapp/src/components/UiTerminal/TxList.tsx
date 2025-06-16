@@ -28,7 +28,7 @@ export const TxList = (props: any) => {
   const typeWriterIndexes = useRef<any>([]);
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    //do nothing
   };
 
   useEffect(() => {

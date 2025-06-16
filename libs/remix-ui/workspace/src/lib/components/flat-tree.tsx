@@ -229,10 +229,6 @@ export const FlatTree = (props: FlatTreeProps) => {
   useEffect(() => {
     if (focusEdit && focusEdit.element) {
       const index = flatTree.findIndex((item) => item.path === focusEdit.element)
-      index && virtuoso.current.scrollIntoView({
-        index,
-        align: 'center'
-      })
     }
   }, [focusEdit])
 

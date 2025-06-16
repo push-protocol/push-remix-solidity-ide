@@ -45,7 +45,7 @@
           "generateIndexHtml": true,
           "extractCss": false,
           "vendorChunk": false,
-          "baseHref": "./"
+          "baseHref": "/"
         }
       }
     },
