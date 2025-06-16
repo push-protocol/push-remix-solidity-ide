@@ -37,7 +37,7 @@
     "build": "nx build",
     "test": "nx test",
     "lint": "nx lint",
-    "deploy": "NODE_OPTIONS=--max-old-space-size=8192 yarn run build:production && gh-pages -d dist/apps/remix-ide -r git@github.com:push-protocol/push-remix-solidity-ide.git",
+    "deploy": "NODE_OPTIONS=--max-old-space-size=8192 yarn run build:production && echo 'remix.push.org' > ./dist/apps/remix-ide/CNAME && gh-pages -d dist/apps/remix-ide -r git@github.com:push-protocol/push-remix-solidity-ide.git",
     "affected:apps": "nx affected:apps",
     "affected:libs": "nx affected:libs",
     "affected:build": "nx affected:build",

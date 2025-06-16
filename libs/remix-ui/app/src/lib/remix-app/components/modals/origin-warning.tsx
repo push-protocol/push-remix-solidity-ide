@@ -18,6 +18,7 @@ const OriginWarning = () => {
     } else if (
       window.location.protocol.indexOf('http') === 0 &&
       window.location.hostname !== 'remix.ethereum.org' &&
+      window.location.hostname !== 'remix.push.org' &&
       window.location.hostname !== 'localhost' &&
       window.location.hostname !== '127.0.0.1'
     ) {
