@@ -95,11 +95,7 @@ export const RemixUiTerminal = (props: RemixUiTerminalProps) => {
   const intl = useIntl()
 
   const scrollToBottom = () => {
-    // Skip scrollIntoView if disable-autofocus is set
-    if (!window.location.search.includes('disable-autofocus=true') &&
-        localStorage.getItem('disable-autofocus') !== 'true') {
-      messagesEndRef.current && messagesEndRef.current.scrollIntoView({ behavior: 'smooth' })
-    }
+    //do nothing
   }
 
   useEffect(() => {

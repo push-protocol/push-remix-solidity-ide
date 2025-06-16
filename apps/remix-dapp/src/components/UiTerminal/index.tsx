@@ -30,14 +30,6 @@ export const RemixUiTerminal = (props: any) => {
   const panelRef = useRef(null);
   const terminalMenu = useRef(null);
 
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  useEffect(() => {
-    scrollToBottom();
-  }, [journalBlocks.length]);
-
   const handleClearConsole = () => {
     typeWriterIndexes.current = [];
     dispatch({ type: 'SET_TERMINAL', payload: { journalBlocks: [] } });
